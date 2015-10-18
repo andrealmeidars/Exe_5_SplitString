@@ -10,7 +10,8 @@ public class StringsRepetitions {
         String stringConcat = "";
 
         for (int i = 0; i<= numberRepetitions - 1; i++){
-            stringConcat = stringConcat + text;
+            String stringValue = text.substring(numberRepetitions);
+            stringConcat = stringConcat + stringValue;
         }
      return stringConcat;
     }

@@ -15,10 +15,10 @@ public class StringTest {
     }
 
 
-    @Test
-    public void returnStringWithRepetitions(){
-        assertThat(stringsRepetitions.returnStringsRepetitions("name", 2), is("namename"));
 
+    @Test
+    public void showStringWith2RepetitionsAndConcatWith2LastLetters(){
+        assertThat(stringsRepetitions.returnStringsRepetitions("name", 2), is("meme"));
     }
 
 

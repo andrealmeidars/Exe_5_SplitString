@@ -14,10 +14,13 @@ public class StringTest {
 
     }
 
+
     @Test
-    public void returnString(){
-        assertThat(stringsRepetitions.returnStringsRepetitions(), is("text"));
+    public void returnStringWithRepetitions(){
+        assertThat(stringsRepetitions.returnStringsRepetitions("name", 2), is("namename"));
 
     }
+
+
 
 }

@@ -18,8 +18,21 @@ public class StringTest {
 
     @Test
     public void showStringWith2RepetitionsAndConcatWith2LastLetters(){
-        assertThat(stringsRepetitions.returnStringsRepetitions("name", 2), is("meme"));
+        assertThat(stringsRepetitions.returnStringsRepetitions("teste", 2), is("tete"));
     }
+
+    @Test
+    public void showStringWithZeroRepetitionsAndReturnEmpty(){
+        assertThat(stringsRepetitions.returnStringsRepetitions("name", 0), is(""));
+    }
+
+    @Test
+    public void showErrorIfNumberOfRepetitiosIsBiggerThanTextSize(){
+        assertThat(stringsRepetitions.returnStringsRepetitions("name", 5), is("error"));
+    }
+
+
+
 
 
 
